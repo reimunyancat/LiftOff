@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cfq2qe75chkiv"]
+
+[ext_resource type="Script" uid="uid://dsmd6uar4fpk" path="res://scripts/title.gd" id="1_4ignj"]
+
+[node name="Title" type="Node2D" unique_id=1539813742]
+script = ExtResource("1_4ignj")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1833640537]
+
+[node name="TitleLabel" type="Label" parent="UI" unique_id=184677780]
+offset_left = 376.0
+offset_top = 120.0
+offset_right = 776.0
+offset_bottom = 250.0
+theme_override_font_sizes/font_size = 96
+text = "LIFTOFF!"
+
+[node name="OfflineLabel" type="Label" parent="UI" unique_id=498944896]
+offset_left = 336.0
+offset_top = 268.0
+offset_right = 816.0
+offset_bottom = 292.0
+
+[node name="StartButton" type="Button" parent="UI" unique_id=1572034160]
+offset_left = 496.0
+offset_top = 336.0
+offset_right = 656.0
+offset_bottom = 384.0
+text = "LAUNCH"
+
+[node name="ScoresButton" type="Button" parent="UI" unique_id=34755254]
+offset_left = 496.0
+offset_top = 400.0
+offset_right = 656.0
+offset_bottom = 448.0
+text = "HIGH SCORES"
+
+[node name="QuitButton" type="Button" parent="UI" unique_id=1010236155]
+offset_left = 496.0
+offset_top = 464.0
+offset_right = 656.0
+offset_bottom = 512.0
+text = "QUIT"
+
+[connection signal="pressed" from="UI/StartButton" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="UI/ScoresButton" to="." method="_on_scores_pressed"]
+[connection signal="pressed" from="UI/QuitButton" to="." method="_on_quit_pressed"]

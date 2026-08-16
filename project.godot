@@ -10,13 +10,18 @@ config_version=5
 
 [application]
 
-config/name="liftoff"
+config/name="LIFTOFF!"
+run/main_scene="uid://cfq2qe75chkiv"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://bvrb1d0ekd5wt"
+
 [display]
 
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [editor_plugins]

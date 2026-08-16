@@ -111,7 +111,7 @@ func load_game() -> void:
 	thrust_level = data.get("thrust_level", 0)
 	tank_level = data.get("tank_level", 0)
 	time_level = data.get("time_level", 0)
-	next_planet = data.get("next_plant", 0)
+	next_planet = data.get("next_planet", 0)
 	best_altitude = data.get("best_altitude", 0.0)
 	rebirth_count = data.get("rebirth_count", 0)
 	credit_mult = data.get("credit_mult", 1.0)
